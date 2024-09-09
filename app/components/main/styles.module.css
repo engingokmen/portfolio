@@ -1,0 +1,11 @@
+.ul {
+  list-style: none;
+  text-align: center;
+}
+
+.ul > li {
+  padding: 20px;
+  border: 1px solid lightblue;
+  border-radius: 8px;
+  margin-top: 6px;
+}
