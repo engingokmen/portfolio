@@ -13,13 +13,17 @@ const {
 
 export const Footer = () => {
   return (
-    <div className={styles.footer}>
+    <footer className={styles.footer}>
       <ProfileImage />
       <p>{`${firstName} ${lastName}`}</p>
       <div className={styles.textGroup}>
-        <a href={`email:${emailLink}`}>{emailDisplay}</a>
-        <a href={`tel:${phoneLink}`}>{phoneDisplay}</a>
+        <a href={`email:${emailLink}`} className={styles.link}>
+          {emailDisplay}
+        </a>
+        <a href={`tel:${phoneLink}`} className={styles.link}>
+          {phoneDisplay}
+        </a>
       </div>
-    </div>
+    </footer>
   );
 };

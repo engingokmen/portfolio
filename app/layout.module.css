@@ -1,0 +1,32 @@
+.page {
+  height: 100vh;
+  display: grid;
+  grid-template-columns: 1fr;
+  grid-template-rows: 120px 1fr 200px;
+
+  padding: 16px;
+  background: linear-gradient(#ffffff, #edf4ff);
+}
+
+.footer {
+  display: flex;
+  justify-content: center;
+  align-items: flex-start;
+}
+
+@media screen and (min-width: 426px) {
+  .page {
+    grid-template-columns: 1fr 200px;
+    grid-template-areas:
+      "header ."
+      "main footer"
+      "main footer";
+    gap: 12px;
+  }
+
+  .footer {
+    grid-area: footer;
+    padding: 20px;
+    border: 1px dotted var(--lightBlue);
+  }
+}

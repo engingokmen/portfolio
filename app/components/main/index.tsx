@@ -1,14 +1,8 @@
 import styles from "./styles.module.css";
-import { settings } from "@/app/settings";
+interface MainProps {
+  children: React.ReactNode;
+}
 
-const { projectList } = settings;
-
-export const Main = () => {
-  const listItems = projectList.map((i) => <li key={i}>{i}</li>);
-
-  return (
-    <div className={styles.container}>
-      <ul className={styles.ul}>{listItems}</ul>
-    </div>
-  );
+export const Main = ({ children }: MainProps) => {
+  return <main className={styles.main}>{children}</main>;
 };
