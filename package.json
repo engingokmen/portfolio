@@ -10,7 +10,7 @@
     "remove-html-extensions": "node ./scripts/remove-html-extensions.mjs"
   },
   "dependencies": {
-    "@engingokmen/library": "^1.1.0",
+    "@engingokmen/library": "^1.1.3",
     "next": "14.2.8",
     "react": "^18",
     "react-dom": "^18"

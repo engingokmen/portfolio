@@ -6,18 +6,16 @@ files.forEach((file) => {
   if (file.endsWith(".html") && file !== "index.html" && file !== "404.html") {
     // Remove the .html extension exept for index.html file
     const folderName = file.split(".")[0];
-    const fileName = "index.html";
+    const fileName = "index";
 
-    console.log("fileName", fileName);
-    console.log("folderName", folderName);
-    console.log(
-      "fs.existsSync(folderName)",
-      fs.existsSync(`out/${folderName}`)
-    );
     if (!fs.existsSync(`out/${folderName}`)) {
       fs.mkdirSync(`out/${folderName}`);
     }
 
-    fs.renameSync(`out/${file}`, `out/${folderName}/${fileName}`);
+    fs.renameSync(
+      `out/${folderName}.html`,
+      `out/${folderName}/${fileName}.html`
+    );
+    fs.renameSync(`out/${folderName}.txt`, `out/${folderName}/${fileName}.txt`);
   }
 });
