@@ -16,15 +16,16 @@ export default function Chat() {
             <code>/select</code> : to display combobox
           </li>
           <li>
-            <code>/image 10</code> : to retreieve image from{" "}
+            <code>/image 10</code> : to retreieve image from{` `}
             <a href="https://picsum.photos" target="__blank">
               picsum.photos
-            </a>{" "}
+            </a>
+            {` `}
             API with id
           </li>
           <li>
             <code>hel</code> : that will trigger autocomplete and popup some
-            results like "hello"
+            results like &apos;hello&apos;
           </li>
         </ul>
       </div>
