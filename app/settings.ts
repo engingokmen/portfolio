@@ -7,5 +7,5 @@ export const settings = {
   phoneDisplay: "+90 532 417 84 79",
   emailLink: "engin.gokmen@icloud.com",
   emailDisplay: "engin.gokmen@icloud.com",
-  projectList: ["Chat"],
+  projectList: ["Chat", "Magic Quadrant"],
 };

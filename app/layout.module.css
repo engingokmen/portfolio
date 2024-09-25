@@ -2,8 +2,8 @@
   height: 100vh;
   display: grid;
   grid-template-columns: 1fr;
-  grid-template-rows: 120px 1fr 200px;
-
+  grid-template-rows: 60px 1fr 140px;
+  gap: 12px;
   padding: 16px;
   background: linear-gradient(#ffffff, #edf4ff);
 }
@@ -21,7 +21,6 @@
       "header ."
       "main footer"
       "main footer";
-    gap: 12px;
   }
 
   .footer {
