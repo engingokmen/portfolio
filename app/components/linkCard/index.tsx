@@ -16,7 +16,7 @@ export const LinkCard = ({
   technologies,
 }: LinkCardProps) => {
   const techList = technologies.map((tech) => {
-    const logo: any = getLogo(tech.toLowerCase() as Logo);
+    const logo = getLogo(tech.toLowerCase() as Logo);
 
     return (
       <li key={tech} className={styles.li}>

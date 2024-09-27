@@ -8,7 +8,9 @@ const { title } = settings;
 
 export const Header = () => {
   const links = settings.projectList.map((project) => (
-    <LinkNav href={`/${pathName(project.title)}`}>{project.title}</LinkNav>
+    <LinkNav key={project.title} href={`/${pathName(project.title)}`}>
+      {project.title}
+    </LinkNav>
   ));
 
   return (
