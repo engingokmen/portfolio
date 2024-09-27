@@ -1,0 +1,19 @@
+.link {
+  color: inherit;
+  text-decoration: none;
+  font-size: 1rem;
+  font-weight: 700;
+
+  &:hover {
+    transition: all 0.15s ease;
+    transform: rotate(3deg);
+  }
+
+  &.visited {
+    color: var(--purple);
+  }
+}
+
+.active {
+  color: var(--purpleDark);
+}

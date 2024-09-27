@@ -3,6 +3,9 @@
   --foreground: #171717;
   --blue: #3d6cbd;
   --lightBlue: lightBlue;
+  --purple: rgba(0, 0, 255, 0.2);
+  --purpleDark: rgba(0, 0, 255, 0.6);
+  --highlight: #fc0;
 }
 
 html,

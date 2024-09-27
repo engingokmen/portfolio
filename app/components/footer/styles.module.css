@@ -16,6 +16,10 @@
 
 .link {
   margin-top: 4px;
+
+  &:hover {
+    text-shadow: var(--highlight) 1px 0 10px;
+  }
 }
 
 @media screen and (min-width: 426px) {
