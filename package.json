@@ -11,6 +11,7 @@
   },
   "dependencies": {
     "@engingokmen/library": "^1.1.3",
+    "@engingokmen/movie-app": "^1.1.7",
     "next": "14.2.8",
     "react": "^18",
     "react-dom": "^18"
