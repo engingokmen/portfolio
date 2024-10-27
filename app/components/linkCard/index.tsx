@@ -16,12 +16,18 @@ export const LinkCard = ({
   technologies,
 }: LinkCardProps) => {
   const techList = technologies.map((tech) => {
-    const logo = getLogo(tech.toLowerCase() as Logo);
+    const logo = getLogo(tech.toLowerCase().replaceAll(" ", "") as Logo);
 
     return (
       <li key={tech} className={styles.li}>
         {logo && (
-          <img width={20} src={logo.src} alt={tech} className={styles.logo} />
+          <img
+            width={20}
+            height={20}
+            src={logo.src}
+            alt={tech}
+            className={styles.logo}
+          />
         )}
         <span className={styles.span}>{tech}</span>
       </li>

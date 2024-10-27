@@ -2,5 +2,6 @@
   .main {
     grid-area: main;
     border: 1px dotted var(--lightBlue);
+    overflow: auto;
   }
 }

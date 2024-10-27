@@ -16,6 +16,9 @@
 
 .link {
   margin-top: 4px;
+  color: inherit;
+  text-decoration: none;
+  font-size: 12px;
 
   &:hover {
     text-shadow: var(--highlight) 1px 0 10px;
