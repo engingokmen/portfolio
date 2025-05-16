@@ -40,6 +40,12 @@
   gap: 16px;
 }
 
+.li {
+  display: flex;
+  align-items: flex-end;
+  gap: 4px;
+}
+
 .span {
   margin-left: 2px;
 }

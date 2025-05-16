@@ -12,5 +12,6 @@ export const ListItems = ({ list }: ListItemsProps) =>
       title={i.title}
       description={i.description}
       technologies={i.technologies}
+      link={i?.link}
     />
   ));

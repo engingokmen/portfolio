@@ -6,6 +6,7 @@ import LitLogo from "./LitLogo.svg";
 import RollupLogo from "./RollupLogo.svg";
 import ReduxLogo from "./ReduxLogo.svg";
 import GithubLogo from "./GithubLogo.svg";
+import NodejsLogo from "./nodejs.svg";
 
 const logos = {
   react: ReactLogo,
@@ -16,6 +17,7 @@ const logos = {
   rollup: RollupLogo,
   redux: ReduxLogo,
   github: GithubLogo,
+  nodejs: NodejsLogo,
 };
 
 export const getLogo = (logo: Logo) => logos[logo];
@@ -29,4 +31,5 @@ export enum Logo {
   rollup = "rollup",
   redux = "redux",
   github = "github",
+  nodejs = "nodejs",
 }

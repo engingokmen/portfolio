@@ -14,6 +14,38 @@ export const settings = {
   githubHomepageLink: "https://github.com/engingokmen/portfolio",
   projectList: [
     {
+      title: "Check please!",
+      description:
+        "Check Please is a web and mobile-based ordering system designed for restaurants, cafes, and beach stores. It allows customers to place orders remotely from their phones, tablets, or computers without needing to wait for a staff member.",
+      technologies: [
+        "Typescript",
+        "React",
+        "React Native",
+        "NodeJs",
+        "Express",
+        "MongoDB",
+        "Socket.io",
+        "Docker",
+        "AWS",
+      ],
+      platforms: ["Web", "Mobile"],
+      link: "https://client.checkpleaseapp.com",
+    },
+    {
+      title: "Coin alarm",
+      description:
+        "A coin alarm that can be used to alarm when the price of a coin is above a certain price.",
+      technologies: [
+        "Typescript",
+        "React Native",
+        "Expo",
+        "Web socket",
+        "NodeJs",
+        "Express",
+      ],
+      link: "https://apps.apple.com/tr/app/coin-alarms/id6738960808",
+    },
+    {
       title: "Chat",
       description:
         "Chat interface that can send and receive messages. It also has some commands like /select, /image 1, and feature automplete for some words.",
