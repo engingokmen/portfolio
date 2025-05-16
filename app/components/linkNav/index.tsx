@@ -11,8 +11,6 @@ export const LinkNav = ({ children, ...props }: LinkNavProps) => {
   const pathname = usePathname();
   const isActive = pathname === props.href;
 
-  console.log("props.href", props.href, pathname);
-
   return (
     <Link className={`${styles.link} ${isActive && styles.active}`} {...props}>
       {children}

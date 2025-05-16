@@ -3,8 +3,11 @@ import { settings } from "@/app/settings";
 import styles from "./styles.module.css";
 import { pathName } from "@/app/utilities";
 import { LinkNav } from "../linkNav";
+import Image from "next/image";
+import { getLogo, Logo } from "../logos";
+import Link from "next/link";
 
-const { title } = settings;
+const { title, githubHomepageLink } = settings;
 
 export const Header = () => {
   const links = settings.projectList.map((project) => (
@@ -14,11 +17,27 @@ export const Header = () => {
   ));
 
   return (
-    <header className={styles.header}>
-      <nav className={styles.nav}>
-        <LinkNav href="/">{title}</LinkNav>
-        {links}
-      </nav>
-    </header>
+    <>
+      <div className={styles.githubLinkWrapper}>
+        <Link
+          target="_blank"
+          href={`${githubHomepageLink}`}
+          className={styles.link}
+        >
+          <Image
+            width={20}
+            height={20}
+            src={getLogo(Logo.github).src}
+            alt="github"
+          />{" "}
+        </Link>
+      </div>
+      <header className={styles.header}>
+        <nav className={styles.nav}>
+          <LinkNav href="/">{title}</LinkNav>
+          {links}
+        </nav>
+      </header>
+    </>
   );
 };

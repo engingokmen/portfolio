@@ -7,6 +7,11 @@ export const settings = {
   phoneDisplay: "+90 532 417 84 79",
   emailLink: "engin.gokmen@icloud.com",
   emailDisplay: "engin.gokmen@icloud.com",
+  linkedinLink: "https://www.linkedin.com/in/hulusi-engin-gokmen-403851189/",
+  linkedinDisplay: "Linkedin",
+  githubLink: "https://github.com/engingokmen",
+  githubDisplay: "Github",
+  githubHomepageLink: "https://github.com/engingokmen/portfolio",
   projectList: [
     {
       title: "Chat",

@@ -16,9 +16,7 @@
 
 .link {
   margin-top: 4px;
-  color: inherit;
-  text-decoration: none;
-  font-size: 12px;
+  composes: link from "../../global.module.css";
 
   &:hover {
     text-shadow: var(--highlight) 1px 0 10px;

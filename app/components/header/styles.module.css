@@ -13,6 +13,32 @@
   width: 100%;
 }
 
+.ul {
+  display: flex;
+  flex-direction: column;
+
+  & a {
+    padding: 8px 6px;
+    min-width: min-content;
+
+    &:hover {
+      background-color: var(--blue);
+      color: var(--white);
+    }
+  }
+}
+
+.githubLinkWrapper {
+  grid-column-start: 2;
+  display: flex;
+  justify-content: end;
+}
+
+.link {
+  composes: link from "../../global.module.css";
+  padding: 4px;
+}
+
 @media screen and (min-width: 426px) {
   .header {
     grid-area: header;

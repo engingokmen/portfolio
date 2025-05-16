@@ -5,6 +5,7 @@ import ReactRouterDomLogo from "./ReactRouterDom.svg";
 import LitLogo from "./LitLogo.svg";
 import RollupLogo from "./RollupLogo.svg";
 import ReduxLogo from "./ReduxLogo.svg";
+import GithubLogo from "./GithubLogo.svg";
 
 const logos = {
   react: ReactLogo,
@@ -14,6 +15,7 @@ const logos = {
   lit: LitLogo,
   rollup: RollupLogo,
   redux: ReduxLogo,
+  github: GithubLogo,
 };
 
 export const getLogo = (logo: Logo) => logos[logo];
@@ -26,4 +28,5 @@ export enum Logo {
   lit = "lit",
   rollup = "rollup",
   redux = "redux",
+  github = "github",
 }
