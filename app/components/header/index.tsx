@@ -30,27 +30,11 @@ export const Header = () => {
   });
 
   return (
-    <>
-      <div className={styles.githubLinkWrapper}>
-        <Link
-          target="_blank"
-          href={`${githubHomepageLink}`}
-          className={styles.link}
-        >
-          <Image
-            width={20}
-            height={20}
-            src={getLogo(Logo.github).src}
-            alt="github"
-          />{" "}
-        </Link>
-      </div>
       <header className={styles.header}>
         <nav className={styles.nav}>
           <LinkNav href="/">{title}</LinkNav>
           {links}
         </nav>
       </header>
-    </>
   );
 };
