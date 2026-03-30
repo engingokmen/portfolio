@@ -1,7 +1,11 @@
+.main {
+  min-width: 0;
+  grid-area: main;
+  border: 1px dotted var(--lightBlue);
+}
+
 @media screen and (min-width: 426px) {
   .main {
-    grid-area: main;
-    border: 1px dotted var(--lightBlue);
     overflow: auto;
   }
 }

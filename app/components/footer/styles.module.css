@@ -1,9 +1,12 @@
 .footer {
+  grid-area: footer;
   display: flex;
   justify-content: flex-start;
   align-items: center;
   flex-direction: column;
   gap: 4px;
+  padding: 20px;
+  border: 1px dotted var(--lightBlue);
 }
 
 .textGroup {
@@ -20,13 +23,5 @@
 
   &:hover {
     text-shadow: var(--highlight) 1px 0 10px;
-  }
-}
-
-@media screen and (min-width: 426px) {
-  .footer {
-    grid-area: footer;
-    padding: 20px;
-    border: 1px dotted var(--lightBlue);
   }
 }

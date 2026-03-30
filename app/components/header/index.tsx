@@ -4,11 +4,9 @@ import styles from "./styles.module.css";
 import styleLink from "../linkNav/styles.module.css";
 import { pathName } from "@/app/utilities";
 import { LinkNav } from "../linkNav";
-import Image from "next/image";
-import { getLogo, Logo } from "../logos";
 import Link from "next/link";
 
-const { title, githubHomepageLink } = settings;
+const { title } = settings;
 
 export const Header = () => {
   const links = settings.projectList.map((project) => {
@@ -16,7 +14,12 @@ export const Header = () => {
 
     if (project.link) {
       return (
-        <Link target="_blank" href={`${href}`} className={styleLink.link}>
+        <Link
+          key={project.title}
+          target="_blank"
+          href={`${href}`}
+          className={styleLink.link}
+        >
           {project.title}
         </Link>
       );

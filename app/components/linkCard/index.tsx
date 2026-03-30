@@ -1,4 +1,5 @@
 import Link from "next/link";
+import Image from "next/image";
 import React from "react";
 import styles from "./styles.module.css";
 import { pathName } from "@/app/utilities";
@@ -24,7 +25,7 @@ export const LinkCard = ({
     return (
       <li key={tech} className={styles.li}>
         {logo && (
-          <img
+          <Image
             width={20}
             height={20}
             src={logo.src}
