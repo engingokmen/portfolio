@@ -1,0 +1,22 @@
+.container {
+  width: 100%;
+  padding: 12px;
+}
+
+.frame {
+  width: 100%;
+  min-height: calc(100vh - 120px);
+  border: 0;
+  border-radius: 8px;
+  background: #020617;
+}
+
+@media screen and (min-width: 426px) {
+  .container {
+    padding: 20px;
+  }
+
+  .frame {
+    min-height: calc(100vh - 96px);
+  }
+}

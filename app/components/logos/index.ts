@@ -8,6 +8,9 @@ import ReduxLogo from "./ReduxLogo.svg";
 import GithubLogo from "./GithubLogo.svg";
 import NodejsLogo from "./nodejs.svg";
 
+const TensorflowLogo =
+  "https://www.gstatic.com/devrel-devsite/prod/vd3309c0d80f416d7367081c5c5ffd3cd171f6ea37becda6136423538d770ce20/tensorflow/images/lockup.svg";
+
 const logos = {
   react: ReactLogo,
   typescript: TypescriptLogo,
@@ -18,6 +21,7 @@ const logos = {
   redux: ReduxLogo,
   github: GithubLogo,
   nodejs: NodejsLogo,
+  tensorflow: TensorflowLogo,
 };
 
 export const getLogo = (logo: Logo) => logos[logo];
@@ -32,4 +36,5 @@ export enum Logo {
   redux = "redux",
   github = "github",
   nodejs = "nodejs",
+  tensorflow = "tensorflow",
 }

@@ -21,14 +21,15 @@ export const LinkCard = ({
   const href = link ? link : pathName(title);
   const techList = technologies.map((tech) => {
     const logo = getLogo(tech.toLowerCase().replaceAll(" ", "") as Logo);
+    const logoSrc = typeof logo === "string" ? logo : logo?.src;
 
     return (
       <li key={tech} className={styles.li}>
-        {logo && (
+        {logoSrc && (
           <Image
             width={20}
             height={20}
-            src={logo.src}
+            src={logoSrc}
             alt={tech}
             className={styles.logo}
           />

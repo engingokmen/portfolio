@@ -14,6 +14,12 @@ export const settings = {
   githubHomepageLink: "https://github.com/engingokmen/portfolio",
   projectList: [
     {
+      title: "Eva",
+      description:
+        "Eva is an evaluation app for technical assessments with an in-browser coding environment and local webcam-based integrity checks.",
+      technologies: ["Typescript", "React", "TensorFlow"],
+    },
+    {
       title: "Check please!",
       description:
         "Check Please is a web and mobile-based ordering system designed for restaurants, cafes, and beach stores. It allows customers to place orders remotely from their phones, tablets, or computers without needing to wait for a staff member.",
